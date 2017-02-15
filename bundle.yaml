@@ -1,0 +1,12 @@
+series: xenial
+services:
+  ul:
+    charm: "cs:~jameinel/ubuntu-lite-4"
+    num_units: 2
+    to:
+      - "0"
+      - "lxd:0"
+machines:
+  "0":
+    series: xenial
+    constraints: "arch=amd64"
